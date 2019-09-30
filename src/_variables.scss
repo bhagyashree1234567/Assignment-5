@@ -1,14 +1,22 @@
+// screen dimensions
+$laptop: laptop;
+$tablet: tablet;
+$mobile: mobile;
+// background colors
+$greybar_background:#F5F6F6;
+$footer_background:#30353D;
+
+// img urls
+$social_media_image:'../images/social-media.png';
+$background_image:'../images/bg.gif';
+
+// fonts
+$bodyfont: 'Roboto', sans-serif;
+$figure_logo:'../images/logo.png';
+
+// colors
 $link_color: #E65C43;
 $header_h1 : #E65C43;
 $header_white: #FFF;
 $header_grey: #666;
 $headline_red:#F25C43;
-$greybar_background:#F5F6F6;
-$footer_background:#30353D;
-$social_media_image:'../images/social-media.png';
-$body_background_image:'../images/bg.gif';
-$bodyfont: 'Roboto', sans-serif;
-$figure_logo:'../images/logo.png';
-$laptop: laptop;
-$tablet: tablet;
-$mobile: mobile;

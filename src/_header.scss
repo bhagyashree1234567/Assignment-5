@@ -1,8 +1,4 @@
 header {
-    width:inherit;
-    clear:both;
-    text-align:center;
-    padding-top:40px;
    img {
         max-width:100%;
         height:auto;
@@ -22,7 +18,7 @@ header {
         }
         
         color:$header_h1;
-        @include font_weight_size_height(100,4em,0);
+        @include font_size(100,4em,0);
         @include break($laptop){
             font-size:3em;
         }
@@ -32,7 +28,7 @@ header {
     }
     h2 {
         color:$header_white;
-        @include font_weight_size_height(900,2.5em,0);
+        @include font_size(900,2.5em,0);
         margin-bottom:70px;
         @include break($laptop){
             font-size:1.5em;
@@ -46,7 +42,7 @@ header {
     }
     h3 {
         color:$header_grey;
-        @include font_weight_size_height(400,2em,0);
+        @include font_size(400,2em,0);
         
         margin-bottom:50px;
         @include break($tablet){
@@ -56,5 +52,11 @@ header {
             color:$header_white;
             font-size:1em;
         }
+    
     }
+
+    width:inherit;
+    clear:both;
+    text-align:center;
+    padding-top:40px;
 }

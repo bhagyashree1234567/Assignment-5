@@ -1,17 +1,11 @@
 .greybar {
-    @include height_width(90px,100%);
+    @include size(90px,100%);
     background:$greybar_background;
     clear:both;
     padding-top:30px;
 }
-.greybar, article img{
-    @include break($mobile){
-        display:none;
-    }
-}
 footer {
-    @include height_width(120px,100%);
-    
+    @include size(120px,100%);
     background:$footer_background;
     text-align:center;
     color:$header_white;
@@ -35,20 +29,26 @@ footer {
 .social-media {
     margin:0 auto;
     width:165px;
-    div {
-        float:left;
-        margin-right:5px;
-    }
+    
     a {
         display:block;
-        @include height_width(36px,36px);
+        @include size(36px,36px);
         text-indent:-9999px;
     }
     $i:0;
     @while $i<5 {
         div:nth-child(#{$i}) {
-            background:url($social_media_image)  ($i - 1)*-38px 0;
+            background:url($social_media_image)  ($i - 1)*-38px 0; // this is the math operation. Which gives uniform spacing for all div blocks
+            $i : $i +1;
         }
     }
+    div {
+        float:left;
+        margin-right:5px;
+    }
 }
-
+.greybar, article img{
+    @include break($mobile){
+        display:none;
+    }
+}

@@ -1,3 +1,7 @@
+/*
+This function resizes the content according to size of the browser at the time. Default parameter is tablet since its the most used
+*/
+
 @mixin break($screen:tablet) {
         @if $screen == mobile{
             @media only screen and (max-width:459px){
@@ -13,13 +17,15 @@
                 {@content;}
         }
     }
-@mixin height_width($height:auto,$width:auto) {
+
+// This mixin is for specifying width and height
+@mixin size($height:auto,$width:auto) {
     height: $height;
     width: $width;
 }
 
 
-@mixin font_weight_size_height($weight:normal,$size:1em,$height:normal) {
+@mixin font_size($weight:normal,$size:1em,$height:normal) {
     font-weight:$weight;
     font-size:$size;
     line-height:$height;  

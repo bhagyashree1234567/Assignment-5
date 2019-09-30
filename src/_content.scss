@@ -1,11 +1,12 @@
+// content, products and testimonials
 #headline {
-    @include height_width(130px,100%);
-    background:$headline_red; // abc
+    @include size(130px,100%);
+    background:$headline_red;
     text-align:center;
     margin:0 auto;
     h1 {
         color:$header_white;
-        @include font_weight_size_height(100,2.5em,null);
+        @include font_size(100,2.5em,null);
         padding-top:50px;
         @include break($tablet){
             font-size:2em;
@@ -57,7 +58,6 @@
         float:right;
         @include break($laptop){
             @include width_margin(46%,0 2%);
-           
         }
         @include break($tablet){
             @include width_margin(96%,0 2%);

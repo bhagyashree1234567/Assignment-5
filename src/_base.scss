@@ -1,12 +1,5 @@
-body {
-    font-family: $bodyfont;
-    @include font_weight_size_height(null,1em,2em);
-    background:url($body_background_image) $header_white repeat-x;
-    margin:0; 
-}
-
+// main and body 
 main {
-    
     width:940px;
     margin:0 auto;
     padding:0 10px;
@@ -19,4 +12,11 @@ main {
     @include break($mobile){
         width:300px;
     }
+}
+body {
+    @include font_size(null,1em,2em);
+    background:url($background_image) $header_white repeat-x;
+    margin:0; 
+    font-family: $bodyfont;
+
 }

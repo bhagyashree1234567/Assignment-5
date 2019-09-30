@@ -1,30 +1,13 @@
-figure  {
-    @include height_width(190px,400px);
-    background:url($figure_logo) no-repeat 0 50px;
-    float:left;
-    display:block;
-    margin:0;
-    @include break($laptop){
-        @include height_width(140px,inherit);
-        float:none;
-        background-position:center;
-    }
-    @include break($mobile){
-        background-size:contain;
-        height:100px;
-    }
-
-
-}
 nav {
-    @include height_width(190px,540px);
-    float:left;
-    text-align:right;
+    @include size(190px,540px);
     @include break($laptop){
-        @include height_width(50px,inherit);
+        @include size(50px,inherit);
         float:none;
         text-align:center;
     }
+    float:left;
+    text-align:right;
+
     @include break($mobile){
         margin-bottom:40px !important;
     }
@@ -57,4 +40,21 @@ nav {
             }
         }
     }
+}
+
+figure  {
+    @include size(190px,400px);
+    margin:0;
+    @include break($laptop){
+        @include size(140px,inherit);
+        float:none;
+        background-position:center;
+    }
+    @include break($mobile){
+        background-size:contain;
+        height:100px;
+    }
+    background:url($figure_logo) no-repeat 0 50px;
+    float:left;
+    display:block;
 }
