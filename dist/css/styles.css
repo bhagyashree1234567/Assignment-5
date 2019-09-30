@@ -1,10 +1,6 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 2em;
-  background: url("../images/bg.gif") #FFF repeat-x;
-  margin: 0; }
-
+/*
+This function resizes the content according to size of the browser at the time. Default parameter is tablet since its the most used
+*/
 main {
   width: 940px;
   margin: 0 auto;
@@ -18,6 +14,13 @@ main {
   @media only screen and (max-width: 459px) {
     main {
       width: 300px; } }
+
+body {
+  font-size: 1em;
+  line-height: 2em;
+  background: url("../images/bg.gif") #FFF repeat-x;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
 
 header {
   width: inherit;
@@ -149,10 +152,6 @@ header {
   clear: both;
   padding-top: 30px; }
 
-@media only screen and (max-width: 459px) {
-  .greybar, article img {
-    display: none; } }
-
 footer {
   height: 120px;
   width: 100%;
@@ -175,14 +174,13 @@ footer {
 .social-media {
   margin: 0 auto;
   width: 165px; }
-  .social-media div {
-    float: left;
-    margin-right: 5px; }
   .social-media a {
     display: block;
     height: 36px;
     width: 36px;
     text-indent: -9999px; }
+  .social-media div:nth-child(0) {
+    background: url("../images/social-media.png") 38px 0; }
   .social-media div:nth-child(1) {
     background: url("../images/social-media.png") 0px 0; }
   .social-media div:nth-child(2) {
@@ -191,24 +189,13 @@ footer {
     background: url("../images/social-media.png") -76px 0; }
   .social-media div:nth-child(4) {
     background: url("../images/social-media.png") -114px 0; }
+  .social-media div {
+    float: left;
+    margin-right: 5px; }
 
-figure {
-  height: 190px;
-  width: 400px;
-  background: url("../images/logo.png") no-repeat 0 50px;
-  float: left;
-  display: block;
-  margin: 0; }
-  @media only screen and (max-width: 959px) {
-    figure {
-      height: 140px;
-      width: inherit;
-      float: none;
-      background-position: center; } }
-  @media only screen and (max-width: 459px) {
-    figure {
-      background-size: contain;
-      height: 100px; } }
+@media only screen and (max-width: 459px) {
+  .greybar, article img {
+    display: none; } }
 
 nav {
   height: 190px;
@@ -248,3 +235,21 @@ nav {
         nav ul li {
           font-size: 0.8em;
           margin: 0 5px; } }
+
+figure {
+  height: 190px;
+  width: 400px;
+  margin: 0;
+  background: url("../images/logo.png") no-repeat 0 50px;
+  float: left;
+  display: block; }
+  @media only screen and (max-width: 959px) {
+    figure {
+      height: 140px;
+      width: inherit;
+      float: none;
+      background-position: center; } }
+  @media only screen and (max-width: 459px) {
+    figure {
+      background-size: contain;
+      height: 100px; } }
