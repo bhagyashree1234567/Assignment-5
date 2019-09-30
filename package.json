@@ -1,5 +1,5 @@
 {
-  "name": "vectacorp",
+  "name": "Assignment-5",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,14 @@
   },
   "dependencies": {
     "gulp-rename": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhagyashree1234567/Assignment-5.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/bhagyashree1234567/Assignment-5/issues"
+  },
+  "homepage": "https://github.com/bhagyashree1234567/Assignment-5#readme"
 }

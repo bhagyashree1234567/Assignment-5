@@ -1,0 +1,60 @@
+figure  {
+    @include height_width(190px,400px);
+    background:url($figure_logo) no-repeat 0 50px;
+    float:left;
+    display:block;
+    margin:0;
+    @include break($laptop){
+        @include height_width(140px,inherit);
+        float:none;
+        background-position:center;
+    }
+    @include break($mobile){
+        background-size:contain;
+        height:100px;
+    }
+
+
+}
+nav {
+    @include height_width(190px,540px);
+    float:left;
+    text-align:right;
+    @include break($laptop){
+        @include height_width(50px,inherit);
+        float:none;
+        text-align:center;
+    }
+    @include break($mobile){
+        margin-bottom:40px !important;
+    }
+    ul {
+        @include break($laptop){
+            margin-top:0;
+        }
+
+        list-style-type:none;
+        margin-top:95px;
+        li {
+            display:inline;
+            font-size:0.8em;
+            margin-right:10px;
+            a {
+                color:$link_color;
+                text-decoration:none;
+                letter-spacing:-0.01em;
+            }
+            a:hover {
+                color:$header_white;
+            }
+            @include break($laptop){
+                font-size:1em;
+                margin:0 10px;
+            }
+            @include break($tablet){
+                font-size:0.8em;
+                margin:0 5px;
+            }
+        }
+    }
+}

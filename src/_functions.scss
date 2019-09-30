@@ -1,0 +1,32 @@
+@mixin break($screen:tablet) {
+        @if $screen == mobile{
+            @media only screen and (max-width:459px){
+                @content;
+            }
+        }
+        @else if $screen == tablet{
+            @media only screen and (max-width:767px)
+                {@content;}
+        }
+        @else if $screen == laptop{
+            @media only screen and (max-width:959px)
+                {@content;}
+        }
+    }
+@mixin height_width($height:auto,$width:auto) {
+    height: $height;
+    width: $width;
+}
+
+
+@mixin font_weight_size_height($weight:normal,$size:1em,$height:normal) {
+    font-weight:$weight;
+    font-size:$size;
+    line-height:$height;  
+}
+
+
+@mixin width_margin($width:auto,$margin:auto){
+    width:$width;
+    margin: $margin;    
+}

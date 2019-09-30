@@ -1,0 +1,60 @@
+header {
+    width:inherit;
+    clear:both;
+    text-align:center;
+    padding-top:40px;
+   img {
+        max-width:100%;
+        height:auto;
+        @include break($tablet){
+            margin-bottom:100px;
+        }
+        @include break($mobile){
+            margin-bottom:80px;
+        }
+    }
+    h1 {
+        &:first-child{
+            @include break($mobile){
+                font-size:1.4em;
+                margin-bottom:20px;
+            }
+        }
+        
+        color:$header_h1;
+        @include font_weight_size_height(100,4em,0);
+        @include break($laptop){
+            font-size:3em;
+        }
+        @include break($tablet){
+            font-size:2em;
+        }
+    }
+    h2 {
+        color:$header_white;
+        @include font_weight_size_height(900,2.5em,0);
+        margin-bottom:70px;
+        @include break($laptop){
+            font-size:1.5em;
+        }
+        @include break($tablet){
+            font-size:1em;
+        }
+        @include break($mobile){
+            font-size:1.4em;
+        }
+    }
+    h3 {
+        color:$header_grey;
+        @include font_weight_size_height(400,2em,0);
+        
+        margin-bottom:50px;
+        @include break($tablet){
+            font-size:1.5em;
+        }
+        @include break($mobile){
+            color:$header_white;
+            font-size:1em;
+        }
+    }
+}
